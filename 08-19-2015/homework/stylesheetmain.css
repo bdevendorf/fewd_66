@@ -1,0 +1,23 @@
+body {
+	font-family: 'Rock Salt';
+	font-size: 20px;
+	background-color: #000000;
+	border-style: solid;
+	border-color: #00EBAA;
+	margin: 50px;
+	padding: 10px;
+}
+
+h1 {
+	text-align: center;
+	color: #00EBAA;
+	font-family: 'Rock Salt', cursive;
+	font-size: 35px;
+}
+
+h2 {
+	color: #00EBAA;
+	font-family: 'Rock Salt', cursive;
+	font-size: 18px;
+	word-spacing: 15px;
+} 
