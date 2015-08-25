@@ -31,15 +31,17 @@ h2 {
 h3 {
 	font-size: 20px;
 	font-family: 'Rock Salt', cursive;
-	text-indent: 5%;
+	padding-left: 30px;
 	color: #00EBAA;
 }
 p {
 	font-family: 'Rock Salt', cursive;
 	font-style: italic;
 	font-size: 15px;
-	text-indent: 10%;
+	/*text-indent: 10%;*/
 	color: #BFBFBF;
+	padding-left: 65px;
+
 }
 img {
 	height: 40%;
@@ -53,7 +55,7 @@ img {
 	text-decoration: underline; 
 	text-decoration-color: #00EBAA;
 	font-size: 15px;
-	text-indent: 10%;
+	padding-left: 30px;
 
 }
 p.price {
