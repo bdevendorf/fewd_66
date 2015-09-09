@@ -1,0 +1,102 @@
+<!-- Header and foot are not flex box items -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex Layout: Marketing W Nav</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		footer {
+			background-color: #cecece;
+			height: 160px;
+			margin: 15px 0;
+			width: 100%;
+			padding: 20px;
+		}
+
+		article {
+			background-color: #cecece;
+			margin: 15px 0;
+			text-align: center;
+			/*created a flex parent to vertically center the children (text in article)*/
+			display: flex; 
+			align-items: center;
+			justify-content: center;
+		}		
+
+		.primary,
+		.secondary {
+			display: flex;
+			justify-content: space-between;
+			height: 220px;
+
+		}
+		.primary article {	
+			width: 100%;
+
+		}
+		.secondary article {
+			width: calc(33.333% - 15px);
+		}
+
+		.box {
+			background-color: #cecece;
+
+		}
+		.littleHeaders {
+			display: flex;
+			justify-content: space-between;
+			height: 40px;
+			width: 100px;
+			margin: 20px;
+		}
+		header {
+			display: flex;
+			height: 100px;
+			justify-content: space-between;
+		}
+		.box {
+			width: 100%;
+
+		}
+	
+	</style>
+</head>
+
+<body>
+
+	<h1>Flex Layout: Marketing W Nav</h1>
+
+<header>
+
+	<section class="box">Logo</section>
+
+	<section class="littleHeaders">
+		<aside class="box">1</aside>
+		<aside class="box">2</aside>
+		<aside class="box">3</aside>
+		<aside class="box">4</aside>
+	</section>
+
+</header>
+
+	<main class="primary">
+		<article>Article 1</article>
+	</main>
+
+	<section class="secondary">
+
+		<article>Article One</article>
+		<article>Article Two</article>
+		<article>Article Three</article>
+	</section>
+
+
+	<footer>Footer</footer>
+
+</body>
+</html>
