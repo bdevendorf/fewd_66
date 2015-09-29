@@ -142,3 +142,19 @@ footer {
   display: inline-block;
   padding: 20px;
 }
+
+button {
+  display: block;
+  text-align: right;
+}
+
+.readmore {
+  text-align: right;
+  margin-right: 250px;
+}
+
+.readmore2 {
+  text-align: right;
+  margin-right: 450px;
+}
+

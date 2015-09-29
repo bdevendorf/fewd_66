@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="2buildstyles.css">
-	<title>Relaxr Page 2</title>
+	<title>Relaxr Page 2 Toggle</title>
 </head>
 <body>
 
@@ -27,7 +27,12 @@
   		<img src="images/blog_photo1.jpg" alt="row"/>
   		<p class="description1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, molestiae? Dolore perferendis et iusto, soluta dignissimos minima maxime laboriosam cumque aspernatur iure totam laudantium tempore, itaque, optio sit, veniam sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sunt tempora, aut laudantium accusamus veritatis repudiandae, eaque inventore impedit quia modi omnis consectetur non. Nulla veritatis voluptatem molestias quod. Amet.</p>
   <br>
-  <p class="readmore"><a href="button">Read More ></a></p>
+  <div class="readmore">
+  	<a href="#" class="readmorebutton">Read More</a>
+  </div>
+  <div class="changes">
+  	<p class="hipsterSpeak" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quia, nulla. Soluta cupiditate ex culpa voluptas sequi, aperiam alias inventore totam, nesciunt animi! Ea quam libero qui optio, voluptatibus voluptate.</p>
+  </div>
   <br>
   <hr>
 	</section>
@@ -42,7 +47,8 @@
 	</ul>  
 	<h2>About Relaxr</h2>
    		<p>Proin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusco porttitor, sapien sed tincidunt fringilla.</p>
-   <a href="button">Learn More</a> 
+   <a href="#" class="learnmorebutton">Learn More</a> 
+   <p class="hipsterSpeak2" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eligendi corporis molestias, beatae incidunt, excepturi maiores libero! In ad neque voluptates, praesentium similique. Mollitia suscipit quibusdam asperiores velit nisi consequatur.</p>
    <br>
    <br>
    <br>
@@ -59,7 +65,12 @@
   		<img src="images/blog_photo2.jpg" alt="row"/>
   		<p class="description1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, molestiae? Dolore perferendis et iusto, soluta dignissimos minima maxime laboriosam cumque aspernatur iure totam laudantium tempore, itaque, optio sit, veniam sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sunt tempora, aut laudantium accusamus veritatis repudiandae, eaque inventore impedit quia modi omnis consectetur non. Nulla veritatis voluptatem molestias quod. Amet.</p>
   <br>
-  <p class="readmore2"><a href="button">Read More ></a></p>
+  <div class="readmore">
+  	<a href="#" class="readmorebutton2">Read More</a>
+  </div>
+  <div class="changes">
+  	<p class="hipsterSpeak3" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quia, nulla. Soluta cupiditate ex culpa voluptas sequi, aperiam alias inventore totam, nesciunt animi! Ea quam libero qui optio, voluptatibus voluptate.</p>
+  </div>
   <hr>
 </article>
 <section class="agile">
@@ -74,5 +85,26 @@
 	<br>
     <p class="copyright">Copyright 2015. Relaxr.</p>
   </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+$('.readmorebutton').on('click', function(event) {
+ 	event.preventDefault();
+	$('.hipsterSpeak').toggle(2000);
+})
+
+$('.learnmorebutton').on('click', function(event) {
+ 	event.preventDefault();
+	$('.hipsterSpeak2').toggle(2000);
+})
+$('.readmorebutton2').on('click', function(event) {
+ 	event.preventDefault();
+	$('.hipsterSpeak3').toggle(2000);
+})
+
+</script>
+
 </body>
 </html>
