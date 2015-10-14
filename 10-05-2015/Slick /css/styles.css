@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+}
+
+/*.hero-slider {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+*/
+
+.hero-slider .slick-slide {
+			background-color: #cecece;
+			background-size: cover;
+			width: 100%;
+			height: 400px;
+	}
+/*
+.hero-slider .slick-slide:nth-child(odd) {
+			background-color: aquamarine;
+	}*/
+
+.hero-slider .one {
+	background-image: url('../images/spring.jpg');
+}
+
+.hero-slider .two {
+	background-image: url('../images/summer.jpg');
+}
+
+.hero-slider .three {
+	background-image: url('../images/fall.jpg');
+}
+
+.hero-slider .four {
+	background-image: url('../images/winter.jpg');
+}
