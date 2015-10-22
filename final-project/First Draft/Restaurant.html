@@ -5,54 +5,140 @@
 	<title>Restaurant</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="js/slick-1.5.7/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.5.7/slick/slick-theme.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.structure.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<header class="header">
-		<h1 class="logo">Restaurant</h1>
+		<h1 class="logo">The Salty Sausage</h1>
 		<nav class="nav">
-			<a class="box" href="#">Welcome</a>
-			<a class="box" href="#">Bacon</a>
-			<a class="box" href="#">Beer</a>
-			<a class="box" href="#">Wine</a>
+			<a class="box" href="#">About</a>
 			<a class="box" href="#">Small Plates</a>
+			<a class="box" href="#">Drinks</a>
+            <a class="box" href="#">Reservations</a>
+            <a class="box" href="#">Info</a>
 		</nav>
 	</header>
 	<section class="primary">
-		<h2>Welcome to Restaurant</h2>
+        <!-- <h2>Welcome to The Salty Sausage</h2> -->
+        <div class="hero-slider">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+        </div>
+    
 	</section>
 	<main class="content-container">
 	<section class="box text">
-      	<h1>Our History</h1>
+      	<h1>About</h1>
       	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nobis laudantium blanditiis mollitia quam tempore nemo magnam iusto, consequatur eveniet ea tenetur odio ullam ratione laboriosam labore delectus aperiam excepturi.</p>
     </section>
     <section class="box photo">
-        <div class="carousel_one">
-        	<img src="images/bruchetta.png" alt="" width="135px" height="110px">
-        	<img src="images/cheese.png" alt="" height="110px" width="135px">
-			<img src="images/veggies.png" alt="" height="110px" width="135px">
-			<img src="images/bread.png" alt="" height="110px" width="135px">
+        <div class="about">
+        	<center><img src="images/factory.jpeg" alt="factory" height="300px" width="500px"></center>
         </div>
     </section> 
     </main>    
     <section class="bacon">
-    	<img src="images/bacon.png" alt="bacon" width="100%" height="350px">
+    	<img src="images/grill.jpeg" alt="grill" width="100%" height="400px">
     </section> 
     <main class="content-container">
     <section class="box photo">
-        <div class="carousel_two">
-        	<img src="images/veggies.png" alt="" height="210px" width="210px">
+        <div class="carousel_one">
+            <img src="images/bruchetta.png" alt="" width="120px" height="110px">
+            <img src="images/cheese.png" alt="" height="110px" width="120px">
+            <img src="images/veggies.png" alt="" height="110px" width="120px">
+            <img src="images/bread.png" alt="" height="110px" width="120px">
         </div>
-    </section>    
+    </section>   
     <section class="box text">
-      	<h1>Our Beer</h1>
+      	<h1>Small Plates</h1>
       	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nobis laudantium blanditiis mollitia quam tempore nemo magnam iusto, consequatur eveniet ea tenetur odio ullam ratione laboriosam labore delectus aperiam excepturi.</p>
     </section>
-    </main> 
     <section class="bread">
-    	<img src="images/bread.png" alt="beer" width="100%" height="350px">
+        <ul>
+        <li data-title="Blue Apron" data-href="http://blueapron.com">
+            <img src="images/bread.jpeg" alt="bread">
+        </li>
+        <li data-title="Drizly" data-href="http://drizly.com">
+            <img src="images/sandwich2.jpeg" alt="Sandwich2">
+        </li>
+        <li data-title="Equinox" data-href="http://equinox.com">
+            <img src="images/kebabs.jpeg" alt="Kebabs">
+        </li>
+        <li>
+            <img src="images/bruchetta.png" alt="Bruchetta">
+        </li>
+        <li>
+            <img src="images/handybg.png" alt="Handy">
+        </li>
+        <li>
+            <img src="images/instacartbg.png" alt="Insta">
+        </li>
+        <li>
+            <img src="images/new_urbanstem.jpg" alt="New Urban">
+        </li>
+        <li>
+            <img src="images/uberbg.png" alt="Uber">
+        </li>
+    </ul>
+    </section>
+     <!-- </main>
+    <div class="bread">
+    	   <img src="images/bread.jpeg" alt="bread" height="250px">
+            <img src="images/sandwich2.jpeg" alt="sandwich" height="250px">
+            <img src="images/kebabs.jpeg" alt="kebabs" height="250px">
+            <img src="images/bruchetta.png" alt="bruchetta" height="250px">
+    </div> 
+    </main> -->
+    <main class="content-container">
+    <section class="box text">
+        <h1>Drinks</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nobis laudantium blanditiis mollitia quam tempore nemo magnam iusto, consequatur eveniet ea tenetur odio ullam ratione laboriosam labore delectus aperiam excepturi.</p>
+    </section>
+    <section class="box photo">
+        <div class="drinks">
+            <center><img src="images/whiskeyglasses.jpeg" alt="whiskey" height="300px" width="500px"></center>
+        </div>
     </section> 
+    </main> 
+    <div class="reservations">
+    <h1>Make a Reservation!</h1>
+    <form>
+        <div class="form-item"> 
+            <input type="text" name="name" placeholder="Name*" required>
+        </div>
+        <div class="form-item"> 
+            <input type="text" name="phone_number" placeholder="Phone Number*" required>
+        </div>
+        <div class="form-item"> 
+            <input type="text" name="Time" placeholder="Select Time" id="dropdown">
+        </div>
+        <div class="form-item"> 
+        <input type="text" name="res_date" placeholder="Reservation Date*" required>
+        </div>
+            <div class="form-item form-item--fullwidth"> 
+        <textarea name="comments">Additional Comments</textarea>
+        </div>
+        <div class="form-item form-item--fullwidth"> 
+            <input type="submit" value="Submit Reservation" id="button">
+        </div>
+    </form>
+    </div>    
 
-	
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script src="js/slick-1.5.7/slick/slick.min.js"></script>
+    <script src="js/jscript.js"></script>
+
 </body>
 </html>
