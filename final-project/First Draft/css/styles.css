@@ -1,17 +1,263 @@
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+* {
+  box-sizing: border-box;
 }
-ul li {
-  position: relative;
+
+  
+.body {
+background-color: #cecece;
+font-family: 'Poiret One', cursive;
+}
+
+.box {
   overflow: hidden;
+  padding: 15px;
+}
+
+.about1 {
+  text-align: center;
+}
+
+.header {
+  background-color: #000000;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  font-family: 'Poiret One', cursive;
+  margin-bottom: 5px; 
+}
+
+.header .logo {
+  height: 60px;
+  margin: 0;
+  width: 300px;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+  border: 2px solid;
+  margin-left: 10px;
+
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.header a {
+  color: white;
+  display: block;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.primary { 
+  height: 400px;
+  background-color: #000000;
+  margin-top: 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+/*h2 {
+  margin-top: 0; 
+  text-align: center;
+  padding-top: 150px;
+}*/
+
+.hero-slider .slick-slide {
+      background-color: #000000;
+      background-size: 650px;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 400px;
+
+  }
+
+.hero-slider .one {
+  background-image: url('../images/bier-mosterd.jpeg');
+
+}
+
+.hero-slider .two {
+  background-image: url('../images/whiskeyglasses.jpeg');
+}
+
+.hero-slider .three {
+  background-image: url('../images/sandwich.jpeg');
+}
+
+.hero-slider .four {
+  background-image: url('../images/hotsausage.jpeg');
+}
+.hero-slider .five {
+  background-image: url('../images/bartap.jpeg');
+}
+
+.hero-slider .six {
+  background-image: url('../images/hotsausage.jpeg');
+}
+
+
+.content-container {
+   display: flex;
+   justify-content: space-between;
+   height: 350px;
+   margin-bottom: 5px;
+
+}
+.text {
+  width: calc(50% - 0px);
+  /*height: 275px;*/
+  background-color: #000000;
+  color: white;
+  font-family: 'Poiret One', cursive;
+}
+
+.text h1 {
+  border: solid;
+  font-size: 20px;
+  font-style: bold;
+  width: 140px;
+  text-align: center;
+}
+
+.photo {
+  width: calc(50% - 0px);
+  /*height: 275px;*/
+  background-color: #cecece;
+  padding-top: 22px;
+}
+
+.grill {
+  height: 350px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.carousel_one img {
+  float: left;
+  margin-left: 15px;
+  margin-bottom: 15px;
+/*  padding: 10px;
+  margin-left: 30px;
+  padding: 15px;*/
+
+}
+.carousel_two img {
+  margin-left: 75px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/*.bread1 {
+  height: 350px;
+  width: 100%;
+  list-style: none;
+  margin-top: 0;
+}
+
+.bread1 li {
+  width: 25%;
+  display: block;
+
+}*/
+
+.meal-section {
+  padding: 0;
+  margin: 0;
+}
+
+.meal-photos {
+  list-style: none;
+  width: 100%;
+  height: 250px;
+  /*background-size: container;*/
+  overflow: hidden;
+  background-color: black;
+  margin: 5px;
+}
+
+.meal-photos li {
+  display: block;
+  float: left;
   width: 25%;
 }
-ul li img {
-  display: block;
+
+.meal-pic {
+  width: 100%;
+  margin: 0;
+}
+
+.meal-pic img {
+  opacity: 0.7;
   width: 100%;
   height: auto;
+  transform: scale(1.10);
+  transition: transform 0.5s, opacity 0.5s;
 }
+
+.meal-pic img:hover {
+  opacity: 1;
+  transform: scale(.95);
+}
+  
+.reservations {
+  font-family: 'Poiret One', cursive;
+  background-color: #000000;
+  color: white;
+  margin-top: 0;
+}
+
+.reservations h1 {
+    text-align: center;
+    /*font-family: 'Poiret One', cursive;*/
+    padding-top: 10px;
+
+}
+
+.form-item > * {
+    width: 100%;
+    padding: 10px;
+    /*font-family: 'Poiret One', cursive;*/
+}
+
+.form-item {
+    margin: 10px 0;
+    width: 100%;
+    color: black;
+    /*font-family: 'Poiret One', cursive;*/
+}
+
+form label.error {
+  font-size: 12px;
+  font-weight: bold;
+  color: red;
+}
+
+#button {
+  color: black;
+}
+
+@media screen and (min-width: 600px) {
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: auto;
+    }
+    .form-item {
+        width: calc(50% - 10px);
+    }
+    .form-item.form-item--fullwidth {
+        width: 100%;
+    }
+    .form-item.form-item--halfwidth {
+        width: calc(25% - 10px);
+    }
+}
+
+
+

@@ -37,7 +37,7 @@
 	</section>
 	<main class="content-container">
 	<section class="box text">
-      	<h1>About</h1>
+        <center><h1 class="about1">About</h1></center>
       	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nobis laudantium blanditiis mollitia quam tempore nemo magnam iusto, consequatur eveniet ea tenetur odio ullam ratione laboriosam labore delectus aperiam excepturi.</p>
     </section>
     <section class="box photo">
@@ -59,58 +59,48 @@
         </div>
     </section>   
     <section class="box text">
-      	<h1>Small Plates</h1>
+      	<center><h1>Small Plates</h1></center>
       	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nobis laudantium blanditiis mollitia quam tempore nemo magnam iusto, consequatur eveniet ea tenetur odio ullam ratione laboriosam labore delectus aperiam excepturi.</p>
     </section>
-    <section class="bread">
-        <ul>
-        <li data-title="Blue Apron" data-href="http://blueapron.com">
-            <img src="images/bread.jpeg" alt="bread">
-        </li>
-        <li data-title="Drizly" data-href="http://drizly.com">
-            <img src="images/sandwich2.jpeg" alt="Sandwich2">
-        </li>
-        <li data-title="Equinox" data-href="http://equinox.com">
-            <img src="images/kebabs.jpeg" alt="Kebabs">
-        </li>
-        <li>
-            <img src="images/bruchetta.png" alt="Bruchetta">
-        </li>
-        <li>
-            <img src="images/handybg.png" alt="Handy">
-        </li>
-        <li>
-            <img src="images/instacartbg.png" alt="Insta">
-        </li>
-        <li>
-            <img src="images/new_urbanstem.jpg" alt="New Urban">
-        </li>
-        <li>
-            <img src="images/uberbg.png" alt="Uber">
-        </li>
-    </ul>
+    </main>
+    <section class="meal-section">
+        <ul class="meal-photos">
+            <li>
+                <figure class="meal-pic">
+                    <img src="images/bread.jpeg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-pic">
+                    <img src="images/sandwich2.jpeg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-pic">
+                    <img src="images/kebabs.jpeg" alt="">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-pic">
+                    <img src="images/bruchetta.png" alt="">
+                </figure>
+            </li>
+        </ul>
     </section>
-     <!-- </main>
-    <div class="bread">
-    	   <img src="images/bread.jpeg" alt="bread" height="250px">
-            <img src="images/sandwich2.jpeg" alt="sandwich" height="250px">
-            <img src="images/kebabs.jpeg" alt="kebabs" height="250px">
-            <img src="images/bruchetta.png" alt="bruchetta" height="250px">
-    </div> 
-    </main> -->
+    
     <main class="content-container">
     <section class="box text">
-        <h1>Drinks</h1>
+        <center><h1>Drinks</h1></center>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nobis laudantium blanditiis mollitia quam tempore nemo magnam iusto, consequatur eveniet ea tenetur odio ullam ratione laboriosam labore delectus aperiam excepturi.</p>
     </section>
     <section class="box photo">
         <div class="drinks">
-            <center><img src="images/whiskeyglasses.jpeg" alt="whiskey" height="300px" width="500px"></center>
+            <center><img src="images/whiskeybar.jpeg" alt="whiskey" height="300px" width="500px"></center>
         </div>
     </section> 
     </main> 
     <div class="reservations">
-    <h1>Make a Reservation!</h1>
+    <center><h1>Make a Reservation!</h1></center>
     <form>
         <div class="form-item"> 
             <input type="text" name="name" placeholder="Name*" required>
@@ -119,13 +109,27 @@
             <input type="text" name="phone_number" placeholder="Phone Number*" required>
         </div>
         <div class="form-item"> 
-            <input type="text" name="Time" placeholder="Select Time" id="dropdown">
+            <input type="hidden" name="Time" placeholder="Select Time" width="10px">
+            <select>
+                <option value="">Select Time</option>
+                <option value="">5:00PM</option>
+                <option value="">5:30PM</option>
+                <option value="">6:00PM</option>
+                <option value="">6:30PM</option>
+                <option value="">7:00PM</option>
+                <option value="">7:30PM</option>
+                <option value="">8:00PM</option>
+                <option value="">8:30PM</option>
+                <option value="">9:00PM</option>
+                <option value="">9:30PM</option>
+                <option value="">10:00PM</option>
+            </select>
         </div>
         <div class="form-item"> 
         <input type="text" name="res_date" placeholder="Reservation Date*" required>
         </div>
             <div class="form-item form-item--fullwidth"> 
-        <textarea name="comments">Additional Comments</textarea>
+        <textarea name="comments" placeholder="additional comments">Additional Comments</textarea>
         </div>
         <div class="form-item form-item--fullwidth"> 
             <input type="submit" value="Submit Reservation" id="button">
