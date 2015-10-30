@@ -6,7 +6,7 @@
   		arrows: false,
   		dots: true,
   		fade: true, 
-  		speed: 500,
+  		speed: 1000,
       autoplay: true
 
 	});
@@ -18,30 +18,39 @@
 $('form').validate()
 
 $('input[name="res_date"]').datepicker({
+  inline: true,
   minDate: 0,
   maxDate: +60
 });
 
-var dropdown = [
-  "4:00PM",
-  "4:30PM",
-  "5:00PM",
-  "5:30PM",
-  "6:00PM",
-  "6:30PM",
-  "7:00PM",
-  "7:30PM",
-  "8:00PM",
-  "8:30PM",
-  "9:30PM",
-  "10:00PM",
-  "10:30PM",
-  "11:00PM",
-  "11:30PM"
-];
+$('a').on('click', smoothScrollJump);
 
-// $('input[name="Time"]').selectmenu({
-//    source: dropdown
-// })
+function smoothScrollJump(event) {
+    event.preventDefault();
 
-	
+    var $currentTarget = $(event.currentTarget);
+    // console.log('currentTarget');
+
+    var targetId = $currentTarget.attr('href');
+
+    // console.log($(targetId).offset());
+
+    var offsetTop = $(targetId).offset().top -85;
+
+    $('html, body').animate({
+        scrollTop: offsetTop
+    }, 1000);
+}
+
+function initialize() {
+  var mapCanvas = document.getElementById('map');
+  var mapOptions = {
+    center: new google.maps.LatLng(40.719938,-74.04866600000003),
+    zoom: 13,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions)
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+

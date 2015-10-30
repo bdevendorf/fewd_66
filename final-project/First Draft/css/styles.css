@@ -18,9 +18,9 @@ font-family: 'Poiret One', cursive;
   text-align: center;
 }
 
-.about {
+/*.about {
   padding-top: 10px;
-}
+}*/
 
 .header {
   background-color: #000000;
@@ -31,13 +31,19 @@ font-family: 'Poiret One', cursive;
   height: 80px;
   font-family: 'Poiret One', cursive;
   margin-bottom: 5px; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+
+
 }
 
 .header .logo {
   height: 60px;
   margin: 0;
   width: 300px;
-  font-size: 30px;
+  font-size: 32px;
   padding-left: 20px;
   padding-top: 10px;
   border: solid;
@@ -47,19 +53,30 @@ font-family: 'Poiret One', cursive;
 .header nav {
   display: flex;
   justify-content: space-between;
-  padding-right: 20px;
+  font-size: 23px;
+  padding: 10px;
+
 }
 .header a {
   color: white;
   display: block;
   margin-left: 15px;
   text-decoration: none;
+  padding-left: 15px;
+  padding-right: 10px;
+
 }
 
-.primary { 
+.nav a:hover {
+ color: yellow;
+ text-transform: uppercase;
+}
+
+.photo-slider { 
   height: 400px;
   background-color: #000000;
-  margin-top: 0;
+/*  padding-top: 50px;*/
+  margin-top: 85px;
   margin-bottom: 30px;
   width: 100%;
 }
@@ -113,7 +130,8 @@ font-family: 'Poiret One', cursive;
 
 }
 .text {
-  width: calc(50% - 0px);
+  /*width: calc(50% - 0px);*/
+  max-width: 50%;
   /*height: 275px;*/
   background-color: #000000;
   color: white;
@@ -134,6 +152,20 @@ font-family: 'Poiret One', cursive;
   /*height: 275px;*/
   background-color: #000000;
   /*padding-top: 22px;*/
+}
+
+.box .about {
+  position: relative;
+}
+
+.box .about img {
+  background-size: contain;
+  padding-right: -15px;
+  margin: -15px;
+  height: 350px;
+  width: auto;
+  position: absolute;
+
 }
 
 .grill {
@@ -174,6 +206,7 @@ font-family: 'Poiret One', cursive;
 .meal-section {
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 .meal-photos {
@@ -183,7 +216,7 @@ font-family: 'Poiret One', cursive;
   /*background-size: container;*/
   overflow: hidden;
   background-color: black;
-  margin: 5px;
+  /*margin: 5px;*/
 }
 
 .meal-photos li {
@@ -200,14 +233,22 @@ font-family: 'Poiret One', cursive;
 .meal-pic img {
   opacity: 0.7;
   width: 100%;
-  height: auto;
-  transform: scale(1.10);
+  height: 250px;
+  transform: scale(1.025);
   transition: transform 0.5s, opacity 0.5s;
 }
 
 .meal-pic img:hover {
   opacity: 1;
-  transform: scale(.95);
+  transform: scale(.90);
+}
+
+.box .drinks img {
+/*  background-size: contain;*/
+  padding-right: -15px;
+  margin: -15px;
+  height: 350px;
+  width: 100%;
 }
   
 .reservations {
@@ -279,9 +320,10 @@ form label.error {
 .footer-container {
    display: flex;
    justify-content: space-between;
-   height: 350px;
+   height: 380px;
    margin-bottom: 5px;
    margin-top: 5px;
+   
 
 }
 
@@ -308,5 +350,9 @@ form label.error {
   /*padding-top: 22px;*/
 }
 
+ #map {
+  width: auto;
+  height: 350px;
+}
 
 
