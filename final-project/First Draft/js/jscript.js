@@ -6,7 +6,7 @@
   		arrows: false,
   		dots: true,
   		fade: true, 
-  		speed: 1000,
+  		speed: 300,
       autoplay: true
 
 	});
@@ -54,3 +54,12 @@ function initialize() {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 
+// function initMap() {
+//   var myLatLng = {lat: 40.719938, lng: -74.04866600000003};
+// }
+
+
+function display_alert()
+ {
+ alert("Thank You For Your Reservation!");
+ }

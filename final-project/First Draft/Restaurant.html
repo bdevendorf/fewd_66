@@ -16,7 +16,8 @@
 </head>
 <body>
 	<header class="header">
-		<h1 class="logo">The Salty Sausage</h1>
+        <a href="">
+		<h1 class="logo">The Salty Sausage</h1></a>
 		<nav class="nav">
 			<a href="#about">Welcome</a>
 			<a href="#smallplates">Food</a>
@@ -26,7 +27,6 @@
 		</nav>
 	</header>
 	<section class="photo_slide">
-        <!-- <h2>Welcome to The Salty Sausage</h2> -->
         <div class="hero-slider">
             <div class="one"></div>
             <div class="two"></div>
@@ -34,17 +34,20 @@
             <div class="four"></div>
             <div class="five"></div>
             <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
         </div>
     
 	</section>
     <section id="about">
 	<main class="content-container">
-	<section class="box text">
+	<section class="text">
         <center><h1 class="about1">Welcome</h1></center>
       	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nobis laudantium blanditiis mollitia quam tempore nemo magnam iusto, consequatur eveniet ea tenetur odio ullam ratione laboriosam labore delectus aperiam excepturi.</p>
     </section>
     <section class="box photo">
-        <div class="about">
+        <div class="factory">
         	<img src="images/factory.jpeg" alt="factory">
         </div>
     </section> 
@@ -52,21 +55,12 @@
     <section class="grill">
     	<img src="images/grill.jpeg" alt="grill" width="100%" height="400px">
     </section>
-    <section id="smallplates">
-   <!--  <main class="content-container">
-    <section class="box photo">
-        <div class="carousel_one">
-            <img src="images/bruchetta.png" alt="" width="120px" height="110px">
-            <img src="images/cheese.png" alt="" height="110px" width="120px">
-            <img src="images/veggies.png" alt="" height="110px" width="120px">
-            <img src="images/bread.png" alt="" height="110px" width="120px">
-        </div> -->
-    </section>  
-    <section class="box food">
-      	<center><h1>Food</h1></center>
-      	<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nobis laudantium blanditiis mollitia quam tempore nemo magnam iusto, consequatur eveniet ea tenetur odio ullam ratione laboriosam labore delectus aperiam excepturi.</p> -->
-    </section>
     </main>
+    <section id="smallplates">
+        <div id="marque">
+        <marquee direction="left">Try our world famous sausages, home brewed beers, top shelf cocktails and barrel aged-whisky.....Open late nights, Sundays, Valentine's Day, President's Day, Ash Wednesday, Chinese New Year, St. Patrick's Day, Good Friday, Easter Sunday, Patriot's Day, Cinco De Mayo, Mother's Day, Memorial Day, Father's Day, Independence Day, Labor Day, Rosh Hashana, Columbus Day, Halloween, Veterans Day, Thanksgiving, Black Friday, First Day of Hanukkah, Last Day of Hanukkah, Christmas Eve, Christmas Day, Washington's Birthday, New Years Eve, New Years Day, On Your Birthday, On My Birthday ....</marquee>
+    </div>
+    </section>
     <section class="meal-section">
         <ul class="meal-photos">
             <li>
@@ -95,7 +89,7 @@
         <ul class="meal-photos">
             <li>
                 <figure class="meal-pic">
-                    <img src="images/cornedbeef.jpeg" alt="">
+                    <img src="images/applehash.jpeg" alt="">
                 </figure>
             </li>
             <li>
@@ -105,31 +99,31 @@
             </li>
             <li>
                 <figure class="meal-pic">
-                    <img src="images/burger.jpeg" alt="">
+                    <img src="images/cornedbeef.jpeg" alt="">
                 </figure>
             </li>
             <li>
                 <figure class="meal-pic">
-                    <img src="images/cocktail.jpeg" alt="">
+                    <img src="images/keilbasa.jpeg" alt="">
                 </figure>
             </li>
         </ul>
     </section>
     <section id="drinks">
     <main class="content-container">
-    <section class="box text">
-        <center><h1>Drinks</h1></center>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nobis laudantium blanditiis mollitia quam tempore nemo magnam iusto, consequatur eveniet ea tenetur odio ullam ratione laboriosam labore delectus aperiam excepturi.</p>
-    </section>
-    <section class="box photo">
+        <section class="box photo">
         <div class="drinks">
             <img src="images/whiskeybar.jpeg" alt="bar">
         </div>
     </section> 
+    <section class="text">
+        <center><h1>Drinks</h1></center>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nobis laudantium blanditiis mollitia quam tempore nemo magnam iusto, consequatur eveniet ea tenetur odio ullam ratione laboriosam labore delectus aperiam excepturi.</p>
+    </section>
     </main> 
     <section id="reserve">
     <div class="reservations">
-    <center><h1>Make a Reservation!</h1></center>
+    <center><h1>Make a Reservation</h1></center>
     <form>
         <div class="form-item"> 
             <input type="text" name="name" placeholder="Name*" required>
@@ -161,20 +155,26 @@
         <textarea name="comments" placeholder="additional comments">Additional Comments</textarea>
         </div>
         <div class="form-item form-item--fullwidth"> 
-            <input type="submit" value="Submit Reservation" id="button">
+            <input type="submit" onclick="display_alert()" value="Submit Reservation" id="button">
         </div>
     </form>
     </div>  
     <section id="info">
     <footer class="footer-container">
-        <section class="box info">
-        <h2 class="info">Contact Info</h2>
+        <section class="info">
         <h1>Address:</h1>
-            <p>144 Mercer St Jersey City, NJ 07302</p>
+            <p>123 Mercer St Jersey City, NJ 07302</p>
         <h1>Phone:</h1>
              <p>(201) 850-2356</p>
         <h1>Email:</h1>
             <p>thesaltysausage@gmail.com</p>
+        <center>
+        <a href="www.twitter.com" target=_"blank">
+            <img src="images/twitter.png"></a>
+        <a href="www.facebook.com">
+        <img src="images/facebook.png"></center></a>
+        <a href="www.seamless.com">
+        <img src="images/seamless.png" height="25px" width="57px"></center></a>
 
         </section>
          <section class="box photo">

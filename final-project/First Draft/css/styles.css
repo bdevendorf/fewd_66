@@ -10,7 +10,7 @@ font-family: 'Poiret One', cursive;
 
 .box {
   overflow: hidden;
-  padding: 15px;
+  /*padding: 15px;*/
 
 }
 
@@ -18,42 +18,40 @@ font-family: 'Poiret One', cursive;
   text-align: center;
 }
 
-/*.about {
-  padding-top: 10px;
-}*/
-
 .header {
+  align-items: center;
   background-color: #000000;
   color: white;
-  align-items: center;
   display: flex;
-  justify-content: space-between;
-  height: 80px;
   font-family: 'Poiret One', cursive;
+  height: 80px;
+  justify-content: space-between;
   margin-bottom: 5px; 
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10000;
-
-
 }
 
 .header .logo {
+  border: solid;
+  font-size: 32px;
   height: 60px;
   margin: 0;
-  width: 300px;
-  font-size: 32px;
+  margin-left: 10px;
   padding-left: 20px;
   padding-top: 10px;
-  border: solid;
-  margin-left: 10px;
-
+  width: 300px;
 }
+
+.header a:hover {
+ color: yellow;
+}
+
 .header nav {
   display: flex;
-  justify-content: space-between;
   font-size: 23px;
+  justify-content: space-between;
   padding: 10px;
 
 }
@@ -61,10 +59,9 @@ font-family: 'Poiret One', cursive;
   color: white;
   display: block;
   margin-left: 15px;
-  text-decoration: none;
   padding-left: 15px;
   padding-right: 10px;
-
+  text-decoration: none;
 }
 
 .nav a:hover {
@@ -73,28 +70,21 @@ font-family: 'Poiret One', cursive;
 }
 
 .photo-slider { 
-  height: 400px;
   background-color: #000000;
-/*  padding-top: 50px;*/
+  height: 400px;
   margin-top: 85px;
   margin-bottom: 30px;
   width: 100%;
 }
-
-/*h2 {
-  margin-top: 0; 
-  text-align: center;
-  padding-top: 150px;
-}*/
 
 .hero-slider .slick-slide {
       background-color: #000000;
       background-size: 650px;
       background-position: center;
       background-repeat: no-repeat;
-      width: 100%;
       height: 400px;
-
+      margin-top: 85px;
+      width: 100%;
   }
 
 .hero-slider .one {
@@ -107,36 +97,62 @@ font-family: 'Poiret One', cursive;
 }
 
 .hero-slider .three {
-  background-image: url('../images/sandwich.jpeg');
+  background-image: url('../images/bangers.jpeg');
 }
 
 .hero-slider .four {
-  background-image: url('../images/hotsausage.jpeg');
+  background-image: url('../images/mozztomato.jpeg');
 }
 .hero-slider .five {
   background-image: url('../images/bartap.jpeg');
 }
 
 .hero-slider .six {
-  background-image: url('../images/hotsausage.jpeg');
+  background-image: url('../images/3craftbeer.png');
+}
+.hero-slider .seven {
+  background-image: url('../images/veggiesausage.jpeg');
+}
+.hero-slider .eight {
+  background-image: url('../images/calzone.jpeg');
+}
+.hero-slider .nine {
+  background-image: url('../images/burger2.jpeg');
 }
 
 
+
+
+#smallplates {
+  background-color: black;
+  height: 55px;
+  margin-top: 56px;
+  padding-top: 5px;
+}
+
+#marque {
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  font-style: bold;
+  padding-top: 10px;
+  text-align: center;
+}
+
 .content-container {
    display: flex;
-   justify-content: space-between;
    height: 350px;
+   justify-content: space-between;
    margin-bottom: 5px;
 
 }
 .text {
-  /*width: calc(50% - 0px);*/
-  max-width: 50%;
-  /*height: 275px;*/
   background-color: #000000;
   color: white;
   font-family: 'Poiret One', cursive;
   margin-right: 5px;
+  max-width: 50%;
+  padding: 15px;
 }
 
 .text h1 {
@@ -148,23 +164,19 @@ font-family: 'Poiret One', cursive;
 }
 
 .photo {
-  width: calc(50% - 0px);
-  /*height: 275px;*/
   background-color: #000000;
-  /*padding-top: 22px;*/
+  width: 50%;
+
 }
 
 .box .about {
   position: relative;
 }
 
-.box .about img {
-  background-size: contain;
+.box .factory img {
   padding-right: -15px;
-  margin: -15px;
-  height: 350px;
-  width: auto;
-  position: absolute;
+  height: 365px;
+  width: 100%;
 
 }
 
@@ -178,45 +190,30 @@ font-family: 'Poiret One', cursive;
   float: left;
   margin-left: 15px;
   margin-bottom: 15px;
-/*  padding: 10px;
-  margin-left: 30px;
-  padding: 15px;*/
-
 }
+
 .carousel_two img {
   margin-left: 75px;
   margin-bottom: 15px;
   margin-top: 15px;
 }
 
-/*.bread1 {
-  height: 350px;
-  width: 100%;
-  list-style: none;
-  margin-top: 0;
-}
-
-.bread1 li {
-  width: 25%;
-  display: block;
-
-}*/
-
-
 .meal-section {
-  padding: 0;
-  margin: 0;
+  background-color: black;
   display: flex;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
 }
 
 .meal-photos {
-  list-style: none;
-  width: 100%;
-  height: 250px;
-  /*background-size: container;*/
-  overflow: hidden;
   background-color: black;
-  /*margin: 5px;*/
+  height: 250px;
+  list-style: none;
+  margin-top: 6px;
+  overflow: hidden;
+  width: 100%;
 }
 
 .meal-photos li {
@@ -231,11 +228,11 @@ font-family: 'Poiret One', cursive;
 }
 
 .meal-pic img {
-  opacity: 0.7;
-  width: 100%;
   height: 250px;
+  opacity: 0.7;
   transform: scale(1.025);
   transition: transform 0.5s, opacity 0.5s;
+  width: 100%;
 }
 
 .meal-pic img:hover {
@@ -244,46 +241,42 @@ font-family: 'Poiret One', cursive;
 }
 
 .box .drinks img {
-/*  background-size: contain;*/
   padding-right: -15px;
-  margin: -15px;
-  height: 350px;
+  height: 365px;
   width: 100%;
 }
   
 .reservations {
-  font-family: 'Poiret One', cursive;
   background-color: #000000;
   color: white;
+  font-family: 'Poiret One', cursive;
   margin-top: 0;
   padding-bottom: 20px;
   padding-top: 10px;
 }
 
 .reservations h1 {
-    text-align: center;
-    /*font-family: 'Poiret One', cursive;*/
     margin-top: 20px;
+     text-align: center;
 
 }
 
 .form-item > * {
-    width: 100%;
     padding: 10px;
-    /*font-family: 'Poiret One', cursive;*/
+    width: 100%;
+    
 }
 
 .form-item {
+    color: black;
     margin: 10px 0;
     width: 100%;
-    color: black;
-    /*font-family: 'Poiret One', cursive;*/
 }
 
 form label.error {
+  color: red;
   font-size: 12px;
   font-weight: bold;
-  color: red;
 }
 
 #button {
@@ -292,8 +285,8 @@ form label.error {
 
 .footer-container {
    display: flex;
-   justify-content: space-between;
    height: 350px;
+   justify-content: space-between;
    margin-bottom: 5px;
 
 }
@@ -319,40 +312,39 @@ form label.error {
 
 .footer-container {
    display: flex;
-   justify-content: space-between;
    height: 380px;
+   justify-content: space-between;
    margin-bottom: 5px;
    margin-top: 5px;
-   
-
 }
 
 .info {
-  width: calc(50% - 0px);
-  /*height: 275px;*/
   background-color: #000000;
   color: white;
   font-family: 'Poiret One', cursive;
   margin-right: 5px;
+  padding-left: 20px;
+  text-align: center;
+  width: 50%;
 }
 
 .info h1 {
+  color: yellow;
   font-size: 20px;
   font-style: bold;
-  width: 140px;
-  
+  padding-top: 20px;
+  width: 100%;
 }
 
 .photo {
-  width: calc(50% - 0px);
-  /*height: 275px;*/
   background-color: #000000;
-  /*padding-top: 22px;*/
+  margin-right: 5px;
+  width: calc(50% - 0px);
 }
 
  #map {
+  height: 380px;
   width: auto;
-  height: 350px;
 }
 
 
